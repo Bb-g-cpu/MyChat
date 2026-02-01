@@ -7,7 +7,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD gunicorn --worker-class eventlet -b 0.0.0.0:8080 app2:app
+CMD gunicorn --worker-class eventlet -b 0.0.0.0:8080 MyChatApp.app:app
+
+
 
 
 
