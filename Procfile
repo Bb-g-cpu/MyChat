@@ -1,4 +1,5 @@
-web: gunicorn --worker-class eventlet -w 1 -b 0.0.0.0:$PORT --pythonpath . main:socketio
+web: gunicorn --worker-class eventlet -w 1 main:app
+
 
 
 
