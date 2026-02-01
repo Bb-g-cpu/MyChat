@@ -7,4 +7,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["gunicorn", "--worker-class", "eventlet", "-w", "1", "app2:app"]
+CMD gunicorn --chdir src app2:app
+
