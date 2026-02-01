@@ -1,3 +1,4 @@
-web: gunicorn --worker-class eventlet -b 0.0.0.0:$PORT app2:app
+web: gunicorn --worker-class eventlet app2:app
+
 
 
